@@ -1,0 +1,58 @@
+﻿
+      
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hesap_makinesi.Ekranlar.Bilimsel"
+             Title="Bilimsel">
+
+  
+    <Grid RowDefinitions="Auto,Auto,*" Padding="4">
+
+        <Label x:Name="ExpressionLabel" Grid.Row="0" Style="{StaticResource ExpressionLabelStyle}" />
+        <Label x:Name="ResultLabel" Grid.Row="1" Text="0" Style="{StaticResource DisplayLabelStyle}" />
+
+     
+        <Grid Grid.Row="2" RowDefinitions="*,*,*,*,*,*,*,*" ColumnDefinitions="*,*,*,*">
+          
+            <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="C" CommandParameter="C" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Text="⌫" CommandParameter="BS" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+
+          
+            <Button Grid.Row="1" Grid.Column="0" Text="sin" CommandParameter="SIN" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="1" Grid.Column="1" Text="cos" CommandParameter="COS" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="1" Grid.Column="2" Text="tan" CommandParameter="TAN" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="1" Grid.Column="3" Text="²√x" CommandParameter="SQRT" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+            
+            <Button Grid.Row="2" Grid.Column="0" Text="sec" CommandParameter="SEC" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="2" Grid.Column="1" Text="csc" CommandParameter="CSC" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="2" Grid.Column="2" Text="cot" CommandParameter="COT" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="2" Grid.Column="3" Text="xʸ" CommandParameter="^" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+           
+            <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="log" CommandParameter="LOG" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="3" Grid.Column="2" Text="ln" CommandParameter="LN" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="3" Grid.Column="3" Text="÷" CommandParameter="/" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+
+            <Button Grid.Row="4" Grid.Column="0" Text="7" CommandParameter="7" Style="{StaticResource DigitButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="4" Grid.Column="1" Text="8" CommandParameter="8" Style="{StaticResource DigitButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="4" Grid.Column="2" Text="9" CommandParameter="9" Style="{StaticResource DigitButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="4" Grid.Column="3" Text="×" CommandParameter="*" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+           
+            <Button Grid.Row="5" Grid.Column="0" Text="4" CommandParameter="4" Style="{StaticResource DigitButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="5" Grid.Column="1" Text="5" CommandParameter="5" Style="{StaticResource DigitButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="5" Grid.Column="2" Text="6" CommandParameter="6" Style="{StaticResource DigitButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="5" Grid.Column="3" Text="−" CommandParameter="-" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+            
+            <Button Grid.Row="6" Grid.Column="0" Text="1" CommandParameter="1" Style="{StaticResource DigitButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="6" Grid.Column="1" Text="2" CommandParameter="2" Style="{StaticResource DigitButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="6" Grid.Column="2" Text="3" CommandParameter="3" Style="{StaticResource DigitButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="6" Grid.Column="3" Text="+" CommandParameter="+" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />
+           
+            <Button Grid.Row="7" Grid.Column="0" Text="+/−" CommandParameter="NEG" Style="{StaticResource DigitButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="7" Grid.Column="1" Text="0" CommandParameter="0" Style="{StaticResource DigitButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="7" Grid.Column="2" Text="," CommandParameter="." Style="{StaticResource DigitButtonStyle}" Clicked="OnKeyClicked" />
+            <Button Grid.Row="7" Grid.Column="3" Text="=" CommandParameter="=" Style="{StaticResource EqualsButtonStyle}" Clicked="OnKeyClicked" />
+            
+            
+        </Grid>
+    </Grid>
+</ContentPage>

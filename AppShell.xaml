@@ -1,0 +1,24 @@
+﻿
+    
+    
+<Shell
+    x:Class="Hesap_makinesi.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Ekranlar="clr-namespace:Hesap_makinesi.Ekranlar"
+    Title="Hesap_makinesi"
+    FlyoutBehavior="Flyout">
+
+ 
+    <ShellContent Title="Standart"
+                  Route="StandardPage"
+                  ContentTemplate="{DataTemplate Ekranlar:Standart}" />
+
+    <ShellContent Title="Bilimsel"
+                  Route="ScientificPage"
+                  ContentTemplate="{DataTemplate Ekranlar:Bilimsel}" />
+
+    <ShellContent Title="Ayarlar"
+                  Route="SettingsPage"
+                  ContentTemplate="{DataTemplate Ekranlar:Ayarlar}" />
+</Shell>

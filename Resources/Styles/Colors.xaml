@@ -1,0 +1,28 @@
+
+    
+    
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+
+    <Color x:Key="LightPageBackground">#F3F3F3</Color>
+    <Color x:Key="LightFlyoutBackground">#FAFAFA</Color>
+    <Color x:Key="LightText">#1B1B1B</Color>
+    <Color x:Key="LightSecondaryText">#5F5F5F</Color>
+    <Color x:Key="LightDisabledText">#A6A6A6</Color>
+    <Color x:Key="LightDigitButton">#FDFDFD</Color>
+    <Color x:Key="LightOperatorButton">#EAEAEA</Color>
+    <Color x:Key="LightEqualsButton">#0067C0</Color>
+    <Color x:Key="LightEqualsText">#FFFFFF</Color>
+
+  
+    <Color x:Key="DarkPageBackground">#202020</Color>
+    <Color x:Key="DarkFlyoutBackground">#2B2B2B</Color>
+    <Color x:Key="DarkText">#FFFFFF</Color>
+    <Color x:Key="DarkSecondaryText">#C8C8C8</Color>
+    <Color x:Key="DarkDisabledText">#6E6E6E</Color>
+    <Color x:Key="DarkDigitButton">#3B3B3B</Color>
+    <Color x:Key="DarkOperatorButton">#323232</Color>
+    <Color x:Key="DarkEqualsButton">#4CC2FF</Color>
+    <Color x:Key="DarkEqualsText">#000000</Color>
+</ResourceDictionary>

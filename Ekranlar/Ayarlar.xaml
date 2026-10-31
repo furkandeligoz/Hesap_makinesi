@@ -1,0 +1,22 @@
+
+    
+    <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hesap_makinesi.Ekranlar.Ayarlar"
+             Title="Ayarlar">
+
+    <VerticalStackLayout Padding="24" Spacing="12">
+     
+
+        <Label Text="Uygulama teması" Style="{StaticResource TitleLabelStyle}" />
+        <Label Text="Seçiminiz tüm sayfalara anında uygulanır ve bir sonraki açılışta hatırlanır."
+               Style="{StaticResource SecondaryLabelStyle}" />
+
+        <RadioButton x:Name="LightRadio" GroupName="Theme" Value="Light"
+                     Content="Açık tema (Light)" CheckedChanged="OnThemeChanged" />
+        <RadioButton x:Name="DarkRadio" GroupName="Theme" Value="Dark"
+                     Content="Koyu tema (Dark)" CheckedChanged="OnThemeChanged" />
+        <RadioButton x:Name="SystemRadio" GroupName="Theme" Value="System"
+                     Content="Sistem ayarını kullan (Use system setting)" CheckedChanged="OnThemeChanged" />
+    </VerticalStackLayout>
+</ContentPage>
