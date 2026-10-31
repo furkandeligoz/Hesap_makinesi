@@ -41,7 +41,8 @@ public partial class Bilimsel : ContentPage
         }
     }
 
-    
+
+    // sayı girer
     private void Rakam(string rakam)
     {
         if (_yeniGiris || ResultLabel.Text == "0") ResultLabel.Text = rakam;
@@ -68,10 +69,9 @@ public partial class Bilimsel : ContentPage
         ResultLabel.Text = ResultLabel.Text.StartsWith('-') ? ResultLabel.Text[1..] : "-" + ResultLabel.Text;
     }
 
-    
+    // yapılacak işlemin belirlenmesi
     private void IslemSec(string islem)
     {
-        // Bekleyen işlem varsa önce o hesaplanır (soldan sağa)
         if (_islem != "" && !_yeniGiris && !Hesapla(Sayi())) return;
 
         _ilk = Sayi();
@@ -93,7 +93,7 @@ public partial class Bilimsel : ContentPage
         _yeniGiris = true;
     }
 
-    
+    //yapılacak işlemin hesaplanması
     private bool Hesapla(double ikinci)
     {
         double sonuc = 0;
@@ -115,7 +115,9 @@ public partial class Bilimsel : ContentPage
         return true;
     }
 
-    
+
+    // bundan önceki kısım standarta ek üs alma işlemini içeriyor
+    // burada bilimsel için gerekli karekök, logaritma ve trigonometri işlemleri mevcut
     private void Fonksiyon(string tus)
     {
         double x = Sayi();
@@ -179,7 +181,7 @@ public partial class Bilimsel : ContentPage
         ExpressionLabel.Text = "";
     }
 
-    
+    // hatayı ekrana verir
     private void Hata(string mesaj)
     {
         Temizle();

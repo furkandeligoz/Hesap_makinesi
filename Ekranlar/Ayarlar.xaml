@@ -11,7 +11,7 @@
         <Label Text="Uygulama teması" Style="{StaticResource TitleLabelStyle}" />
         <Label Text="Seçiminiz tüm sayfalara anında uygulanır ve bir sonraki açılışta hatırlanır."
                Style="{StaticResource SecondaryLabelStyle}" />
-
+        <!-- Tema seçim kısmı -->
         <RadioButton x:Name="LightRadio" GroupName="Theme" Value="Light"
                      Content="Açık tema (Light)" CheckedChanged="OnThemeChanged" />
         <RadioButton x:Name="DarkRadio" GroupName="Theme" Value="Dark"

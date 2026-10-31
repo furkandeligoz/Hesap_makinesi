@@ -7,10 +7,10 @@
 
    
     <Grid RowDefinitions="Auto,Auto,*" Padding="4">
-
+        <!-- Önizleme ve sonuç satırı -->
         <Label x:Name="ExpressionLabel" Grid.Row="0" Style="{StaticResource ExpressionLabelStyle}" />
         <Label x:Name="ResultLabel" Grid.Row="1" Text="0" Style="{StaticResource DisplayLabelStyle}" />
-
+        <!-- Standart hesap makinesinin buttonlarının şeması -->
         <Grid Grid.Row="2" RowDefinitions="*,*,*,*,*" ColumnDefinitions="*,*,*,*">
       
             <Button Grid.Row="0" Grid.Column="0" Text="CE" CommandParameter="CE" Style="{StaticResource OperatorButtonStyle}" Clicked="OnKeyClicked" />

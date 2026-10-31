@@ -19,7 +19,7 @@ public partial class Standart : ContentPage
         InitializeComponent();
     }
 
-   
+  
     private void OnKeyClicked(object? sender, EventArgs e)
     {
         string tus = (string)((Button)sender!).CommandParameter;
@@ -40,7 +40,7 @@ public partial class Standart : ContentPage
         }
     }
 
-    
+    // sayı girer
     private void Rakam(string rakam)
     {
         if (_yeniGiris || ResultLabel.Text == "0") ResultLabel.Text = rakam;
@@ -67,7 +67,7 @@ public partial class Standart : ContentPage
         ResultLabel.Text = ResultLabel.Text.StartsWith('-') ? ResultLabel.Text[1..] : "-" + ResultLabel.Text;
     }
 
-    
+    // yapılacak işlemin belirlenmesi 
     private void IslemSec(string islem)
     {
         
@@ -92,7 +92,7 @@ public partial class Standart : ContentPage
         _yeniGiris = true;
     }
 
-    
+    //yapılacak işlemin hesaplanması
     private bool Hesapla(double ikinci)
     {
         double sonuc = 0;
@@ -127,7 +127,7 @@ public partial class Standart : ContentPage
         ExpressionLabel.Text = "";
     }
 
-    
+    // hatayı ekrana verir
     private void Hata(string mesaj)
     {
         Temizle();

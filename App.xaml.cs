@@ -8,6 +8,8 @@ namespace Hesap_makinesi
         {
             InitializeComponent();
 
+                // seçimin uygulama kapandıktan sonra da açılmasını sağlayan kısım
+            
             string savedTheme = Preferences.Default.Get("app_theme", "System");
             UserAppTheme = savedTheme switch
             {

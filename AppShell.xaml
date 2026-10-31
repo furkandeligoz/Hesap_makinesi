@@ -9,7 +9,7 @@
     Title="Hesap_makinesi"
     FlyoutBehavior="Flyout">
 
- 
+    <!-- Shellden sayfaların seçildiği kısım -->
     <ShellContent Title="Standart"
                   Route="StandardPage"
                   ContentTemplate="{DataTemplate Ekranlar:Standart}" />
